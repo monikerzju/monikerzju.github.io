@@ -104,7 +104,8 @@ ignore:
 ## Themes: https://hexo.io/themes/
 # theme: wind
 # theme: hexo-crisp-minimal-theme
-theme: next
+# theme: next
+remote_theme: monikerzju/hexo-theme-next
 # theme: landscape
 # theme: corporate
 
