@@ -105,7 +105,7 @@ ignore:
 # theme: wind
 # theme: hexo-crisp-minimal-theme
 # theme: next
-remote_theme: monikerzju/hexo-theme-next
+remote_theme: monikerzju/jekyll-theme-next
 # theme: landscape
 # theme: corporate
 
