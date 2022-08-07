@@ -1,0 +1,23 @@
+.post-gallery {
+  align-items: top;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 3fr;
+  margin-bottom: 20px;
+
+  +mobile() {
+    grid-auto-flow: column;    
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    margin-bottom: 0px;
+  }
+
+  a {
+    // For fancybox
+    border: 0;
+  }
+
+  img {
+    margin: 0;
+  }
+}
