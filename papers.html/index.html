@@ -29,7 +29,7 @@
 <meta property="og:description" content="Some papers about Computer Architecture and Operating System.">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-08-06T14:59:25.284Z">
-<meta property="article:modified_time" content="2022-08-06T14:59:25.284Z">
+<meta property="article:modified_time" content="2022-10-05T15:57:15.207Z">
 <meta property="article:author" content="Ziqi Yuan">
 <meta name="twitter:card" content="summary">
 
@@ -170,6 +170,13 @@ Recently working on hardware-assisted system security and heterogeneous systems.
         </h1>
 
         <div class="post-meta">
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-10-05 23:57:15" itemprop="dateModified" datetime="2022-10-05T23:57:15+08:00">2022-10-05</time>
+              </span>
 
           
 
@@ -185,14 +192,20 @@ Recently working on hardware-assisted system security and heterogeneous systems.
         <p>Some papers about Computer Architecture and Operating System.</p>
 <span id="more"></span>
 
-<h4 id="Isolation-work-is-not-publicly-available-now"><a href="#Isolation-work-is-not-publicly-available-now" class="headerlink" title="Isolation work is not publicly available now."></a>Isolation work is not publicly available now.</h4><h4 id="RegVault-Hardware-Assisted-Selective-Data-Randomization-for-Operating-System-Kernels"><a href="#RegVault-Hardware-Assisted-Selective-Data-Randomization-for-Operating-System-Kernels" class="headerlink" title="RegVault: Hardware Assisted Selective Data Randomization for Operating System Kernels."></a><a href="/papers/dac22-regvault.pdf">RegVault: Hardware Assisted Selective Data Randomization for Operating System Kernels.</a></h4><ul>
-<li>Proceedings of the 59th The Design Automation Conference (<strong>DAC 2022</strong>).</li>
+<h4 id="The-hypervisor-work-is-not-available-for-now…"><a href="#The-hypervisor-work-is-not-available-for-now…" class="headerlink" title="The hypervisor work is not available for now…"></a>The hypervisor work is not available for now…</h4><h4 id="VDom-Fast-and-Unlimited-Virtual-Domains-on-Multiple-Architectures"><a href="#VDom-Fast-and-Unlimited-Virtual-Domains-on-Multiple-Architectures" class="headerlink" title="VDom: Fast and Unlimited Virtual Domains on Multiple Architectures."></a><a href="">VDom: Fast and Unlimited Virtual Domains on Multiple Architectures.</a></h4><ul>
+<li>Proceedings of the 2023 Conference on Architectural Support for Programming Languages and Operating Systems (<span style="color:blue"><strong>ASPLOS 2023</strong></span>).</li>
+<li>New findings. We find that a large number of domains are needed in real-world applications, and the challenges to provide fast domain virtualization are how to reduce the overhead caused by waiting for free domains and excessive TLB flushes.</li>
+<li>Efficient domain virtualization with unlimited domains. We leverage separate address spaces to map different groups of virtual domains to the hardware domains in each page table. We propose a domain virtualization algorithm that switches page global directory, and puts a thread in a private address space before domain evictions to reduce unnecessary TLB invalidation.</li>
+<li>Real platform evaluation. We implement a prototype for X86 and ARM based on Linux, and evaluate VDom on real platforms. The results show VDom is fast, compatible, and secure when providing unlimited domains. On server applications, the overheads are less than 2.19% and 2.65% on X86 and ARM, respectively. On random domain access tests, VDom is 4.4-40x faster than libmpk.</li>
+</ul>
+<h4 id="RegVault-Hardware-Assisted-Selective-Data-Randomization-for-Operating-System-Kernels"><a href="#RegVault-Hardware-Assisted-Selective-Data-Randomization-for-Operating-System-Kernels" class="headerlink" title="RegVault: Hardware Assisted Selective Data Randomization for Operating System Kernels."></a><a href="/papers/dac22-regvault.pdf">RegVault: Hardware Assisted Selective Data Randomization for Operating System Kernels.</a></h4><ul>
+<li>Proceedings of the 59th The Design Automation Conference (<span style="color:blue"><strong>DAC 2022</strong></span>).</li>
 <li>New Hardware Primitives. We design and implement novel hardware primitives, providing cryptographically strong confidentiality and integrity protection supports for register-grained data. We further propose the cryptographic lookaside buffer to reduce the performance overhead.</li>
 <li>New Protection Techniques. We propose chain-based interrupt context protection to protect interrupt contexts. We also propose register spilling protection to safeguard sensitive data spilling via static analysis.</li>
 <li>Prototype and Evaluation. We implement a prototype of RegVault on Linux kernel v5.8.18, protecting six types of sensitive data. Our evaluations show that RegVault can defend against kernel data attacks effectively with a minimal performance overhead.</li>
 </ul>
 <h4 id="H2Cache-Building-a-Hybrid-Randomized-Cache-Hierarchy-for-Mitigating-Cache-Side-Channel-Attacks"><a href="#H2Cache-Building-a-Hybrid-Randomized-Cache-Hierarchy-for-Mitigating-Cache-Side-Channel-Attacks" class="headerlink" title="H2Cache: Building a Hybrid Randomized Cache Hierarchy for Mitigating Cache Side-Channel Attacks."></a><a href="/papers/seed21-h2cache.pdf">H2Cache: Building a Hybrid Randomized Cache Hierarchy for Mitigating Cache Side-Channel Attacks.</a></h4><ul>
-<li>2021 International Symposium on Secure and Private Execution Environment Design (<strong>SEED 2021</strong>).</li>
+<li>2021 International Symposium on Secure and Private Execution Environment Design (<span style="color:blue"><strong>SEED 2021</strong></span>).</li>
 <li>We propose a defense scheme against cache side-channel attacks from the perspective of the whole cache hierarchy, including both L1 and L2 caches.</li>
 <li>We present a hybrid randomized cache hierarchy, which leverages the benefits of both table-based and computation-based randomization schemes to meet security and performance needs.</li>
 <li>We design and implement a cache system, H2Cache, on a self-designed RISC-V processor, and perform extensive evaluation including security, performance, and resource utilization on the FPGA platform.</li>
@@ -274,7 +287,7 @@ Recently working on hardware-assisted system security and heterogeneous systems.
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Isolation-work-is-not-publicly-available-now"><span class="nav-number">1.</span> <span class="nav-text">Isolation work is not publicly available now.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#RegVault-Hardware-Assisted-Selective-Data-Randomization-for-Operating-System-Kernels"><span class="nav-number">2.</span> <span class="nav-text">RegVault: Hardware Assisted Selective Data Randomization for Operating System Kernels.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#H2Cache-Building-a-Hybrid-Randomized-Cache-Hierarchy-for-Mitigating-Cache-Side-Channel-Attacks"><span class="nav-number">3.</span> <span class="nav-text">H2Cache: Building a Hybrid Randomized Cache Hierarchy for Mitigating Cache Side-Channel Attacks.</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#The-hypervisor-work-is-not-available-for-now%E2%80%A6"><span class="nav-number">1.</span> <span class="nav-text">The hypervisor work is not available for now…</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#VDom-Fast-and-Unlimited-Virtual-Domains-on-Multiple-Architectures"><span class="nav-number">2.</span> <span class="nav-text">VDom: Fast and Unlimited Virtual Domains on Multiple Architectures.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#RegVault-Hardware-Assisted-Selective-Data-Randomization-for-Operating-System-Kernels"><span class="nav-number">3.</span> <span class="nav-text">RegVault: Hardware Assisted Selective Data Randomization for Operating System Kernels.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#H2Cache-Building-a-Hybrid-Randomized-Cache-Hierarchy-for-Mitigating-Cache-Side-Channel-Attacks"><span class="nav-number">4.</span> <span class="nav-text">H2Cache: Building a Hybrid Randomized Cache Hierarchy for Mitigating Cache Side-Channel Attacks.</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
