@@ -8,7 +8,13 @@ thumbnail:
 Some papers about Computer Architecture and Operating System.
 <!-- more -->
 
-#### Isolation work is not publicly available now.
+#### The hypervisor work is not available for now...
+
+#### [VDom: Fast and Unlimited Virtual Domains on Multiple Architectures.]()
+- Proceedings of the 2023 Conference on Architectural Support for Programming Languages and Operating Systems (**ASPLOS 2023**).
+- New findings. We find that a large number of domains are needed in real-world applications, and the challenges to provide fast domain virtualization are how to reduce the overhead caused by waiting for free domains and excessive TLB flushes.
+- Efficient domain virtualization with unlimited domains. We leverage separate address spaces to map different groups of virtual domains to the hardware domains in each page table. We propose a domain virtualization algorithm that switches page global directory, and puts a thread in a private address space before domain evictions to reduce unnecessary TLB invalidation.
+- Real platform evaluation. We implement a prototype for X86 and ARM based on Linux, and evaluate VDom on real platforms. The results show VDom is fast, compatible, and secure when providing unlimited domains. On server applications, the overheads are less than 2.19% and 2.65% on X86 and ARM, respectively. On random domain access tests, VDom is 4.4-40x faster than libmpk.
 
 #### [RegVault: Hardware Assisted Selective Data Randomization for Operating System Kernels.](/papers/dac22-regvault.pdf)
 - Proceedings of the 59th The Design Automation Conference (**DAC 2022**).
